@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic Site</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="font-[RedHat]">
+
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+    <nav id="nav">
+        <div id="nav1" class="flex container justify-between items-center py-4 lg:py-5">
+            <div class="overlay"></div>
+            <img class="w-[120px] sm:w-[140px] lg:w-[160px] h-auto relative z-10" src="Images/logo.png" alt="Debite logo">
+
+            <div id="navbar" class="nav-links flex list-none gap-5 lg:pr-4">
+                <i id="close" class="fa-solid fa-xmark text-2xl" aria-label="Close menu"></i>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <div class="dropdown-content space-y-4">
+                        <p>Services</p>
+                        <p>Card List</p>
+                        <p>Card Detail</p>
+                        <p>FAQ's</p>
+                        <p>404</p>
+                    </div>
+                    <a href="#">Page</a>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-content space-y-4">
+                        <p>About Us</p>
+                        <p>Our Team</p>
+                    </div>
+                    <a href="#">About</a>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-content space-y-4">
+                        <p>Archives</p>
+                        <p>Single Post</p>
+                    </div>
+                    <a href="#">Blog</a>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </div>
+
+            <div class="nav-actions flex items-center gap-3 relative z-10 shrink-0">
+                <a href="tel:+1232341234" id="nav-phone" class="text-[#00d7ff] flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i><span>+123-234-1234</span>
+                </a>
+                <button type="button" class="nav-toggle lg:hidden" id="btn" aria-label="Open menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero2 text-white relative overflow-hidden">
+        <div class="landing-overlay"></div>
+        <div class="cont container flex flex-col items-center justify-center text-center pt-8 pb-12 lg:pt-12 lg:pb-16">
+            <div class="hero-text mt-4 lg:mt-6 w-full max-w-3xl">
+                <h1 class="mb-6 lg:mb-8 text-[clamp(2rem,6vw,5rem)] font-bold leading-[1.15]">
+                    Smart <span class="text-[#00d7ff]">Payments</span>
+                    Anyway, Anytime.
+                </h1>
+                <p class="text-[#dddddd] text-sm sm:text-base max-w-xl mx-auto">Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit. Ut elit
+                    tellus, luctus nec ullamcorper
+                    mattis,
+                    pulvinar dapibus leo.</p>
+            </div>
+            <div class="hero-visual w-full flex justify-center items-center mt-6 lg:mt-8">
+                <img src="Images/mobile.png" alt="Mobile app preview" class="hero-phone">
+            </div>
+        </div>
+    </section>
+
+    <section class="section2 text-white mt-14 max-sm:mt-0">
+
+        <div class="container feature-boxes pb-8 lg:pb-20 w-full relative">
+
+            <div
+                class="bx1 absolute top-[-120px] right-[47%] w-[42%] flex space-x-8 py-9 px-8 rounded-[10px] max-sm:static max-sm:w-[92%] max-sm:px-2 max-xl:px-4 max-xl:py-6 max-xl:right-[51%] max-xl:top-[-100px] max-2xl:right-[50%]">
+                <img class="size-[78px]" src="Images/boximg.png" alt="">
+                <div class="w-[100%] max-xl:w-[70%] 2xl:pr-20">
+                    <h1 class="text-[#F45FE4] text-[24px] font-bold mb-1 max-xl:text-[19px]">Intelligence
+                        Optimization</h1>
+                    <p class="font-[Poppins] text-[16px] font-light leading-7.5 max-xl:text-[13px] max-xl:leading-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam non.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="bx1 absolute top-[-120px] right-12 flex w-[42%] space-x-8 py-9 px-8 rounded-[10px] max-sm:static max-sm:w-[92%] max-sm:px-2 max-xl:px-4 max-xl:py-6 max-xl:right-[6%] max-xl:top-[-100px]">
+                <img class="size-[78px]" src="Images/boximg2.png" alt="">
+                <div class="w-[100%] max-xl:w-[70%] 2xl:pr-20">
+                    <h1 class="text-[#F45FE4] text-[24px] font-bold mb-1 max-xl:text-[19px]">
+                        Fastest-Improving Platform</h1>
+                    <p class="font-[Poppins] text-[16px] font-light leading-7.5 max-xl:text-[13px] max-xl:leading-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam non.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container content-map flex justify-between items-center pt-12 lg:pt-24 mb-12 lg:mb-24">
+            <div id="hero" class="w-full lg:w-[45%]">
+                <h1 class="mb-10 max-xl:mb-6">We Have The <span class="text-[#00d7ff]">Most Users
+                    </span> All Over
+                    The World</h1>
+                <p class="mb-11 text-[#dddddd] font-light">Morbi sit amet metus et nisl fringilla fringilla sit amet
+                    molestie
+                    eros. Praesent pretium, velit sit amet molestie elementum. Ut ac eros blandit, congue lacus ut,
+                    interdum odio. In nisi lorem, feugiat eget placerat vel, vehicula in mi.</p>
+
+                <div class="stats-row flex justify-around w-full lg:w-[80%] text-center mx-auto lg:mx-0">
+                    <div class="leading-9">
+                        <h1 class="font-bold">98M+</h1>
+                        <p class="text-[#00d7ff]">Happy Customers</p>
+                    </div>
+                    <div class="leading-9">
+                        <h1 class="font-bold">$249M+</h1>
+                        <p class="text-[#00d7ff]">Total Transactions</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="map-wrap w-full lg:w-auto">
+                <img src="Images/map.png" alt="World map showing global users">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section3 text-white">
+        <div class="container">
+            <div id="hero" class="services-header flex w-full items-center justify-between">
+                <div class="w-full lg:w-[40%] text-center lg:text-left">
+                    <h1 class="">Our <span class="text-[#00d7ff]">Services
+                        </span> Anywhere & Anytime</h1>
+                </div>
+                <div class="w-full lg:w-[50%] text-center lg:text-left">
+                    <p class="font-[Poppins] text-sm sm:text-base font-light leading-relaxed mt-4 lg:mt-12 text-[#dddddd]">
+                        Maecenas dictum
+                        metus quis euismod feugiat. Sed
+                        accumsan
+                        maximus ex, ut mollis sem. Ut nec lacus id ipsum tincidunt ullamcorper. Cras vel sapien magna.
+                        Morbi eleifend ligula nunc, non elementum sem scelerisque a. </p>
+                </div>
+            </div>
+
+            <div id="services" class="flex gap-6 lg:gap-8 pb-12 lg:pb-24 pt-8 lg:pt-12">
+                <div class="active">
+                    <img src="Images/serv1.png" alt="Online payments">
+                    <div id="txt">
+                        <h2>Online Payments</h2>
+                        <p class="">Click edit to change this text. Lorem ipsum dolor sit amet, cctetur
+                            adipiscing elit. Ut elit
+                            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <a href="#">More Services></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="Images/serv2.png" alt="All commerce">
+                    <div id="txt">
+                        <h2>All Commerce</h2>
+                        <p class="">Click edit to change this text. Lorem ipsum dolor sit amet, cctetur
+                            adipiscing elit. Ut elit
+                            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <a href="#">More Services></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="Images/serv3.png" alt="Integration services">
+                    <div id="txt">
+                        <h2>Integration Others</h2>
+                        <p class="">Click edit to change this text. Lorem ipsum dolor sit amet, cctetur
+                            adipiscing elit. Ut elit
+                            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <a href="#">More Services></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section4 text-white">
+        <div class="container m-auto pt-10 pb-20 max-sm:pt-0 max-lg:pb-5">
+
+            <div class="invoice-row flex items-center mb-12 lg:mb-20 w-full">
+                <div class="phone-visual relative mx-auto lg:mx-0">
+                    <img src="Images/mobilebg.png" alt="">
+                    <img class="absolute top-[5%] left-[5%] w-[85%] max-w-none"
+                        src="Images/mobile2.png" alt="Invoice control app">
+                </div>
+                <div id="hero" class="w-full lg:flex-1 pt-6 lg:pt-0 text-center lg:text-left px-2 sm:px-0">
+                    <h1 class="pb-6 lg:pb-10"><span class="text-[#00d7ff]">Easier
+                        </span> & <span class="text-[#00d7ff]"> Hassle-Free</span> Invoice Control</h1>
+                    <p class="font-[Poppins] text-sm sm:text-base text-[#b1b1b1]">Easier & hassle-free invoice
+                        control fringilla fringilla sit amet molestie eros. Praesent pretium, velit sit amet molestie
+                        elementum. Ut ac eros blandit, congue lacus ut, interdum odio. In nisi lorem, feugiat eget
+                        placerat vel, vehicula in mi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="amount flex justify-evenly items-center text-center">
+                <div class="">
+                    <h1 class="">79M+</h1>
+                    <p class="">Downloads</p>
+                </div>
+                <div class="">
+                    <h1 class="">$249M+</h1>
+                    <p class="">Total Transactions</p>
+                </div>
+                <div class="">
+                    <h1 class="">29M+</h1>
+                    <p class="">FeedBack</p>
+                </div>
+                <div class="">
+                    <h1 class="">299+</h1>
+                    <p class="">Trusted Companies</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section5 text-white">
+        <div class="container px-4">
+            <div class="p-[1em] max-sm:p-[0.3rem]">
+
+                <div id="hero" class="text-center">
+                    <h1 class="mb-[37px]">What <span class="text-[#00d7ff]">People
+                            Saying</span>
+                        Are About Us</h1>
+                </div>
+
+                <div class="testimonials-grid flex w-full justify-center pb-16 lg:pb-32">
+
+                    <div class="box px-6 sm:px-8 pb-10 pt-8 relative">
+                        <div class="space-x-1 pb-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img class="size-[50px] absolute top-16 z-[-10]" src="Images/quotes.png" alt="">
+                        <p class="">Quisque vehicula libero quis enim congue, non rutrum leo auctor. Morbi
+                            iaculis nunc a odio
+                            finibus, vel tristique est euismod. Phasellus..</p>
+                        <div class="flex items-center gap-4">
+                            <img class="size-[70px] max-xl:size-[50px]" src="Images/prof1.png" alt="">
+                            <div>
+                                <h1>Henry Morella</h1>
+                                <span>Designation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box px-6 sm:px-8 pb-10 pt-8 relative">
+                        <div class="space-x-1 pb-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img class="size-[50px] absolute top-16 z-[-10]" src="Images/quotes.png" alt="">
+                        <p class="">Quisque vehicula libero quis enim congue, non rutrum leo auctor. Morbi
+                            iaculis nunc a odio
+                            finibus, vel tristique est euismod. Phasellus..</p>
+                        <div class="flex items-center gap-4">
+                            <img class="size-[70px] max-xl:size-[50px]" src="Images/prof2.png" alt="">
+                            <div>
+                                <h1>Dekassyah</h1>
+                                <span>Designation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box px-6 sm:px-8 pb-10 pt-8 relative">
+                        <div class="space-x-1 pb-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img class="size-[50px] absolute top-16 z-[-10]" src="Images/quotes.png" alt="">
+                        <p class="">Quisque vehicula libero quis enim congue, non rutrum leo auctor. Morbi
+                            iaculis nunc a odio
+                            finibus, vel tristique est euismod. Phasellus..</p>
+                        <div class="flex items-center gap-4">
+                            <img class="size-[70px] max-xl:size-[50px]" src="Images/prof3.png" alt="">
+                            <div>
+                                <h1>Dyas Cardinal</h1>
+                                <span>Designation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box px-6 sm:px-8 pb-10 pt-8 relative">
+                        <div class="space-x-1 pb-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img class="size-[50px] absolute top-16 z-[-10]" src="Images/quotes.png" alt="">
+                        <p class="">Quisque vehicula libero quis enim congue, non rutrum leo auctor. Morbi
+                            iaculis nunc a odio
+                            finibus, vel tristique est euismod. Phasellus..</p>
+                        <div class="flex items-center gap-4">
+                            <img class="size-[70px] max-xl:size-[50px]" src="Images/prof4.png" alt="">
+                            <div>
+                                <h1>Payad Assam</h1>
+                                <span>Designation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white">
+        <div class="divup pt-20 max-sm:pt-4 max-lg:pt-8">
+            <div class="divup-overlay" aria-hidden="true"></div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" style="width: 100%"
+                preserveAspectRatio="none">
+                <path class="elementor-shape-fill" opacity="0.33"
+                    d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                </path>
+                <path class="elementor-shape-fill" opacity="0.66"
+                    d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                </path>
+                <path class="elementor-shape-fill"
+                    d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                </path>
+            </svg>
+
+            <div class="container footer-cta">
+
+                <div class="footer-cta__copy">
+                    <div class="footer-cta__heading-wrap">
+                        <h1 class="pb-8 lg:pb-10">Get Ready To Have <span class="text-[#00d7ff]">Best Smart
+                                Payments
+                            </span> in The World</h1>
+                    </div>
+                    <p class="font-[Poppins] text-sm sm:text-base leading-relaxed text-[#B1B1B1] font-medium pb-0">
+                        Are You
+                        Ready for fringilla fringilla sit amet
+                        molestie eros. Praesent pretium, velit sit amet molestie elementum. Ut ac eros blandit,
+                        congue lacus ut.
+                    </p>
+                </div>
+
+                <div class="footer-cta__action">
+                    <button
+                        class="text-base font-black bg-[#00d7ff2e] py-4 px-8 rounded-[10px] hover:bg-[#00d7ff] transition-colors"><i
+                            class="fa-solid fa-caret-right mr-0.5"></i> Get Started</button>
+                </div>
+
+                <div class="footer-cta__visual">
+                    <div class="footer-cta__stage">
+                        <img class="footer-cta__hand" src="Images/robo.png" alt="">
+                        <div class="footer-cta__cards-slot">
+                            <img class="footer-cta__cards" src="Images/card.png" alt="Payment cards held by robotic hand">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="divdown pt-12 lg:pt-25 pb-6 container">
+
+            <div class="footer-grid pb-6">
+                <div>
+                    <img class="w-[120px] sm:w-[160px] h-auto" src="Images/logo.png" alt="Debite logo">
+                    <p class="font-[Poppins] font-medium text-xs sm:text-sm text-[#dddddd] leading-relaxed pt-5">
+                        Debite is amet
+                        metus et nisl
+                        fringilla
+                        fringilla sit amet molestie eros. Praesent pretium, velit sit
+                        amet molestie elementum. Quisque semper ac odio non dignissim.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <h1>Usefull Links</h1>
+                    <div
+                        class="links text-[16px] font-black flex flex-col space-y-2 max-xl:text-[14px] max-lg:text-[12px]">
+                        <a href="#"><i class="fa-solid fa-circle-info"></i>About Us</a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i>Services</a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i>Card List</a>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i>FAQ's</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h1>Visit Us</h1>
+                    <div
+                        class="text-[16px] font-black flex flex-col space-y-2 max-lg:text-[12px] max-lg:font-bold max-xl:font-bold max-xl:text-[14px]">
+                        <h2>99 Roving St., Big City</h2>
+                        <h2>www.awesomesite.com</h2>
+                        <h2>hello@awesomesite.com</h2>
+                        <h2>+123-234-1234</h2>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h1>Follow Us :</h1>
+                    <div class="icons text-lg sm:text-xl font-[Poppins] flex flex-wrap gap-4 sm:gap-7">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center sm:text-right p-3 border-t border-[#8f9ea02e] w-full">
+                <p class="text-xs sm:text-sm font-medium font-[Poppins]">Copyright 2025 © All Right Reserved Design by
+                    Ali Haider
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
